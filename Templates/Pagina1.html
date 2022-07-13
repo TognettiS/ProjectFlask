@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+  </head>
+  <body>
+      <input type="text" id="Input" value="">
+      <button id="Botao2" name="button">Enviar</button>
+
+      <script type="text/javascript">
+        document.getElementById('Botao2').onclick = function(){
+          var x = document.getElementById('Input').value
+
+          if (x == "Gatos" || x == "gatos" || x == "Gato"|| x =="gato"){
+            location.href = "/Gatos"
+          }
+          else if (x == "Cachorros"|| x =="Cachorro" || x == "cachorros"|| x =="cachorro" || x == "Cão"|| x =="cão") {
+            location.href = "/Cachorros"
+          }
+          else {
+            location.href = "/Pagina1"
+          }
+
+        }
+      </script>
+  </body>
+</html>
